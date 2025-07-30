@@ -1,0 +1,96 @@
+@media screen and (max-width: 700px) {
+  .text-preset-1 {
+    font-size: 46px;
+    line-height: 42px;
+    letter-spacing: -1.84px;
+  }
+  .text-preset-2 {
+    font-size: 32px;
+    line-height: 28px;
+    letter-spacing: -1.92px;
+  }
+  .text-preset-3 {
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: -1.56px;
+  }
+  body {
+    padding-block: 2rem;
+    main {
+      width: 343px;
+      grid-template-columns: repeat(4, 4.234375rem);
+      grid-template-rows: 290px 162.5px 216.25px 469px 372px 215.5px 234.35px 350.5px;
+      column-gap: 24px;
+      header,
+      .create-content,
+      .social-media,
+      .create-content {
+        padding: var(--spacing-400);
+      }
+      .manage-platforms,
+      .maintain-schedule {
+        padding: var(--spacing-200);
+      }
+      .non-stop-content,
+      .audience-growth,
+      .write-content {
+        padding: var(--spacing-300);
+      }
+      header {
+        grid-column: 1 / -1;
+      }
+      .manage-platforms {
+        grid-column: 1 / -1;
+      }
+      .maintain-schedule {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        background-position: left 16px bottom -35%;
+        h2{
+          width: 75%;
+        }
+      }
+      .social-media {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        p {
+          max-width: 17, 4375rem;
+          text-align: center;
+        }
+        .img {
+          width: 19.25rem;
+          height: 17rem;
+        }
+      }
+      .non-stop-content {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+        background-position: center top var(--spacing-300);
+        align-items: end;
+        h2 {
+          margin-inline-start: 0;
+          margin-inline: auto;
+          text-align: center;
+        }
+      }
+      .audience-growth {
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+        background-position: left var(--spacing-300) bottom var(--spacing-300);
+      }
+      .create-content {
+        grid-column: 1 / 5;
+        grid-row: 7 / 8;
+        background-position: left var(--spacing-400) bottom var(--spacing-400);
+        h2 {
+          max-width: 100%;
+          margin-block-start: 0;
+        }
+      }
+      .write-content {
+        grid-column: 1 / -1;
+        grid-row: 8 / 9;
+      }
+    }
+  }
+}
